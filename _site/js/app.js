@@ -1,4 +1,4 @@
-$.getJSON('http://data.seattle.gov/api/views/3k2p-39jp/rows.json?jsonp=?&max_rows=10', function(results) {
+$.getJSON('http://data.seattle.gov/api/views/kzjm-xkqj/rows.json?jsonp=?&max_rows=10', function(results) {
   console.log(results.data);
   
   var map = L.map('map').setView([47.6097, -122.3331], 11);
@@ -8,8 +8,8 @@ $.getJSON('http://data.seattle.gov/api/views/3k2p-39jp/rows.json?jsonp=?&max_row
   }).addTo(map);
   
   $.each(results.data, function(index, value) {
-    L.marker([value[21], value[20]]).addTo(map)
-    $('.results').append( value[12] + "<br/>" );
+    L.marker([value[11], value[12]]).addTo(map)
+    $('.results').append( value[9] + "<br>" + value[8] + "<hr>" );
   });
   
   $('.meta-description').text( results.meta.view.description );

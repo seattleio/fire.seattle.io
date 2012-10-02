@@ -21,6 +21,7 @@ nav.top-bar a.site-title {
   font-weight: 900;
   display: block;
   padding-top: 6px;
+  float: left;
 }
 
 div.main {

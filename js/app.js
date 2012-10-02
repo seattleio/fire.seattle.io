@@ -9,6 +9,7 @@ $.getJSON('http://data.seattle.gov/api/views/kzjm-xkqj/rows.json?jsonp=?&max_row
   
   $.each(results.data, function(index, value) {
     L.marker([value[11], value[12]]).addTo(map)
+    .bindPopup('<h6>' + value[9] + '</h6>' + value[8]);
   });
   
 //  $('.meta-description').text( results.meta.view.description );

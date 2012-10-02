@@ -1,3 +1,50 @@
+html,body,input,button,select,textarea {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+html {
+  background-image: url("http://seattle.io/img/bg-light.png");
+}
+
+nav.top-bar {
+  background-image: url("http://seattle.io/img/bg.png");
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(150, 150, 150, .2);
+  box-shadow: 0px 0px 3px 1px rgba(150, 150, 150, .2)
+  text-shadow: 0px -1px 1px #fff;
+  filter: dropshadow(color=#fff, offx=0, offy=-1);
+}
+
+nav.top-bar .columns-16 {
+  margin: 0px;
+}
+
+nav.top-bar a.site-title {
+  color: #444;
+  font-weight: 900;
+  display: block;
+  padding-top: 6px;
+}
+
+div.main {
+  padding-top: 15px;
+}
+
 div#map {
-height: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(150, 150, 150, .2);
+  box-shadow: 0px 0px 3px 1px rgba(150, 150, 150, .2)
+}
+
+
+footer {
+font-weight: 100;
+color: #fff;
+background-color: #444;
+background-image: url("http://seattle.io/img/bg.png");
+text-shadow: 0px -1px 1px #000;
+filter: dropshadow(color=#000, offx=0, offy=-1);
+padding-top: 20px;
 }

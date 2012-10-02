@@ -15,26 +15,43 @@
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="js/leaflet/leaflet.ie.css" />
     <![endif]-->
-    <link rel="stylesheet" href="css/simple-styles.min.css"/>
+    <link rel="stylesheet" href="css/simple-styles.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <script src="js/modernizr.min.js"></script>
   </head>
   <body>
-    <div class="background">
+    <nav class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="columns-16">
+            <a href="http://seattle.io" class="site-title" target="blank">seattle.io</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="row">
         <div class="main columns-16">
+          <h3>Seattle Fire Department 911 dispatches</h3>
           <div class="row">
             <div class="columns-12">
               <div id="map"></div>
+              <div class="meta-description"></div>
             </div>
             <div class="results columns-4"></div>
-            <div class="meta-description columns-16"></div>
           </div>
         </div><!-- /.main -->
       </div><!-- /.row -->
     </div><!-- /.container -->
-  </div><!-- /.background -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="columns-16">
+            <p>seattle.io</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->

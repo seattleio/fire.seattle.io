@@ -16,10 +16,6 @@ nav.top-bar {
   filter: dropshadow(color=#fff, offx=0, offy=-1);
 }
 
-nav.top-bar .columns-16 {
-  margin: 0px;
-}
-
 nav.top-bar a.site-title {
   color: #444;
   font-weight: 900;

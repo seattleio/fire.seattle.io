@@ -11,7 +11,7 @@ $.getJSON('http://data.seattle.gov/api/views/kzjm-xkqj/rows.json?jsonp=?&max_row
     L.marker([value[11], value[12]]).addTo(map)
   });
   
-  $('.meta-description').text( results.meta.view.description );
+//  $('.meta-description').text( results.meta.view.description );
 });
 
 

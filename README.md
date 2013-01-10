@@ -1,6 +1,8 @@
 Seattle Fire Dept. 911 dispatches plotted on a map.
 ---------------------------------------------------
 
+Part of [seattle.io](http://seattle.io)  
+
 This demo uses data from [data.seattle.gov](https://data.seattle.gov).
 
 The dataset is [Seattle Real Time Fire 911 Calls](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) on data.seattle.gov.

@@ -1,5 +1,7 @@
+//variables to change based on user input
+var userLimit = 25;
 $.ajax({
-  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=25&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
+  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=' + userLimit + '&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
   method: 'GET',
   dataType: 'json',
   // data: {

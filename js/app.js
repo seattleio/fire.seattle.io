@@ -28,6 +28,6 @@ $.ajax({
     });
   },
   error: function( jqxhr, status, error ){
-    console.log( 'Something went wrong!' );
+    console.log( 'Something went wrong with the AJAX request!' );
   }
 });

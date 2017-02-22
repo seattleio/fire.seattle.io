@@ -19,7 +19,7 @@ $.ajax({
     }).addTo(map);
 
     $.each(data, function() {
-      if (this.latitude && this.longitude) {
+      if (this['latitude'] && this['longitude']) {
         var date = new Date(this['datetime']);
         var moment_date = moment(date).format('h:mm a, MMM D, YYYY');
         L.marker([this['latitude'], this['longitude']]).addTo(map)

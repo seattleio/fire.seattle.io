@@ -1,7 +1,10 @@
-//variables to change based on user input
-var userLimit = 25;
+//variables to change based on user input (may also look into calling a thousand rows or something and putting them in localStorage and then filtering before populating map)
+
+var numPinsLimit = 25;
+
+//AJAX call to API
 $.ajax({
-  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=' + userLimit + '&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
+  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=' + numPinsLimit + '&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
   method: 'GET',
   dataType: 'json',
   // data: {

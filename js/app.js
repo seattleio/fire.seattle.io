@@ -1,5 +1,5 @@
 $.ajax({
-  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=25',
+  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=25&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
   method: 'GET',
   dataType: 'json',
   // data: {

@@ -1,16 +1,7 @@
-//variables to change based on user input (may also look into calling a thousand rows or something and putting them in localStorage and then filtering before populating map)
-
-var numPinsLimit = 25;
-
-//AJAX call to API
 $.ajax({
-  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=' + numPinsLimit + '&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
+  url: 'https://data.seattle.gov/resource/grwu-wqtk.json?$limit=25&$order=datetime%20DESC&$where=datetime>"2014-01-01"',
   method: 'GET',
   dataType: 'json',
-  // data: {
-  //   'codedescription': 'EMBEZZLEMENT',
-  //   '$$app_token': app_token
-  // },
   success: function( data, status, jqxhr ){
     console.log(Object.values(data));
     var map = L.map('map').setView([47.6097, -122.3331], 11);

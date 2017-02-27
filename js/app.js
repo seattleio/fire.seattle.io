@@ -3,7 +3,7 @@ $.ajax({
   method: 'GET',
   dataType: 'json',
   success: function( data, status, jqxhr ){
-    console.log(Object.values(data));
+    // console.log(Object.values(data));
     var map = L.map('map').setView([47.6097, -122.3331], 11);
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
